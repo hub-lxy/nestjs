@@ -27,6 +27,7 @@ export class TestController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
+    console.log('请求过来', id);
     return this.testService.findOne(+id);
   }
 

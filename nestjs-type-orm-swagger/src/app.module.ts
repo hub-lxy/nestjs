@@ -10,7 +10,8 @@ import { TestModule } from './test/test.module';
     TypeOrmModule.forRoot({
       type: 'mysql', //数据库类型
       username: 'root', //账号
-      password: '123456', //密码
+      // password: '123456', //密码
+      password: 'root', //密码
       host: 'localhost', //host
       port: 3306, // 端口
       database: 'test', //库名
